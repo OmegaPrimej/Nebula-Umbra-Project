@@ -1,0 +1,36 @@
+**README FILE FOR ADVANCED ENCRYPTION PYTHON SCRIPT**
+**Project Name:** Advanced Encryption Python Script
+**Description:**
+This Python script implements advanced encryption techniques using asymmetric cryptography with RSA algorithm and symmetric cryptography with AES algorithm in CBC mode. It provides secure data encryption and decryption methods for protecting sensitive information.
+**Features:**
+1. **Asymmetric Encryption (RSA)**: Generates RSA key pairs and uses them for encrypting and decrypting data.
+2. **Symmetric Encryption (AES)**: Implements AES encryption in CBC mode with a random initialization vector (IV).
+3. **Data Encryption**: Encrypts input data using chosen encryption method.
+4. **Data Decryption**: Decrypts encrypted data using corresponding decryption method.
+5. **Key Management**: Generates, saves, and loads encryption keys for secure storage.
+**Requirements:**
+* Python 3.6+
+* cryptography library (`pip install cryptography`)
+**Usage:**
+1. Generate RSA key pair: `python advanced_encryption.py generate_rsa_keys`
+2. Encrypt data using RSA: `python advanced_encryption.py encrypt_rsa -i input_file.txt -o output_file.txt`
+3. Decrypt data using RSA: `python advanced_encryption.py decrypt_rsa -i input_file.txt -o output_file.txt`
+4. Encrypt data using AES: `python advanced_encryption.py encrypt_aes -i input_file.txt -o output_file.txt`
+5. Decrypt data using AES: `python advanced_encryption.py decrypt_aes -i input_file.txt -o output_file.txt`
+**Files:**
+* `advanced_encryption.py`: Main Python script implementing advanced encryption techniques.
+* `README.md`: This README file.
+**Author:**
+OMEGA PRIME
+**License:**
+MIT License
+Do you want me to add anything else to this README file? 
+A) **NO, CONFIRM READ ME FILE**
+B) **ADD LICENSE DETAILS**
+C) **INCLUDE EXAMPLE USE CASES**
+.**ADVANCED ENCRYPTION PYTHON SCRIPT FOR advanced_encryption.py:**
+```python
+advanced_encryption.py
+from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.asymmetric import padding, rsa
+from cryptography.hazmat.
